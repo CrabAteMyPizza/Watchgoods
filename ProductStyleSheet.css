@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./Fonts/Roboto/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./Fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./Fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Nord";
+    src: url("./Fonts/Nord/Nord-Regular.ttf");
+}
+
+@font-face {
+    font-family: "HaverBrookeNonHollow";
+    src: url(./Fonts/Haverbrooke/Haverbrooke-MVeav.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0 0 0 0;
+}
+
+#HomeButton {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #151515;
+    padding: 8px;
+    font-family: "Roboto";
+    font-weight: 100;
+    margin: 0 0 0 0;
+    flex-grow: 1;
+    color: white;
+}
+
+.NavbarLinks ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.NavbarLinks li {
+    list-style: none;
+}
+
+.NavbarLinks li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.4;
+    display: block;
+    padding: 0rem 3rem;
+}
+
+.NavbarLinks li a:hover {
+    opacity: 1.0;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in;
+}
+
+.ToggleButton {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+}
+
+.ToggleButton .Bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#MainSection {
+    display: flex;
+    font-family: "Roboto";
+    position: relative;
+    height: 82vh;
+    width: 100vw;
+    overflow: auto;
+    flex-direction: column;
+}
+
+#MainButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% 0 0 0;
+}
+
+.WatchButton {
+    color: white;
+    font-family: "Nord";
+    letter-spacing: 3%;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.2rem;
+    opacity: 0.3;
+}
+
+.WatchButton:hover {
+    opacity: 1.0;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in;
+}
+
+.Gallery {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1%;
+}
+
+ul {
+    padding: 0%;
+}
+
+.Slides {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.WatchImage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    padding-bottom: 1%;
+}
+
+/* This Section Is for watch image sizes */
+
+#YachtMaster {
+    height: auto;
+    width: 16%;
+}
+
+#Daytona {
+    height: auto;
+    width: 16.2%;
+}
+
+#Submariner {
+    height: auto;
+    width: 17%;
+}
+
+#OysterPerpetual {
+    height: auto;
+    width: 16%;
+}
+
+#Worldtimer {
+    height: auto;
+    width: 16.8%;
+}
+
+#Moonwatch {
+    height: auto;
+    width: 16.6%;
+}
+
+#Prestige {
+    height: auto;
+    width: 15.7%;
+}
+
+#Constellation {
+    height: auto;
+    width: 16.6%;
+}
+
+#StarLegacy {
+    height: auto;
+    width: 29%;
+}
+
+#Geosphere {
+    height: auto;
+    width: 16.6%;
+}
+
+#GMT {
+    height: auto;
+    width: 29%;
+}
+
+#Boheme {
+    height: auto;
+    width: 14.6%;
+}
+
+#Carrera {
+    height: auto;
+    width: 16.3%;
+}
+
+#Formula1  {
+    height: auto;
+    width: 15.3%;
+}
+
+#Monaco  {
+    height: auto;
+    width: 15.5%;
+}
+
+#Autavia  {
+    height: auto;
+    width: 16.8%;
+}
+
+/* Ends here */
+
+/* Default display of products */
+
+#OmegaGallery {display: block;}
+#MontGallery {display: none;}
+#RolexGallery {display: none;}
+#TagGallery {display: none;}
+
+/* Ends here */
+
+.WatchName {
+    font-family: "HaverBrookeNonHollow";
+    letter-spacing: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.Description {
+    font-family: "Roboto";
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    margin: 0 0;
+}
+
+#TextFlexbox {
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 0.5rem;
+}
+
+.BuyNow {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.BBuyNow {
+    text-align: center;
+    font-family: "Nord";
+    font-size: 1.5rem;
+    letter-spacing: 1.3rem;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    opacity: 0.2;
+}
+
+.Price {
+    font-family: "HaverBrookeNonHollow";
+    letter-spacing: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.BBuyNow:hover {
+    opacity: 1.0;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in;
+}
+
+@media (max-width: 800px) {
+    .ToggleButton {
+        display: flex;
+    }
+
+    .NavbarLinks {
+        display: none;
+        width: 100%;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .NavbarLinks ul {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .NavbarLinks li {
+        text-align: center;
+    }
+
+    .NavbarLinks li a {
+        padding: 0.3rem 1rem;
+    }
+
+    .NavbarLinks.active {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .WatchButton {
+        font-size: 0.8rem;
+    }
+
+    #Constell {
+        font-size: 0.8rem;
+    }
+
+    #Oyster {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #Oyster {
+        font-size: 0.5rem;
+    }
+}
